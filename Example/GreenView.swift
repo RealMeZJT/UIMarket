@@ -23,5 +23,8 @@ class GreenView: UIView {
     func say() {
         print("GreenView init")
     }
+    @IBAction func greenClick(_ sender: Any) {
+        print("green click inside")
+    }
     
 }

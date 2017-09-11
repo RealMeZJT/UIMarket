@@ -11,21 +11,33 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibView" customModule="Example" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="PFc-aR-Kn7">
+        <view contentMode="scaleToFill" id="PFc-aR-Kn7" customClass="GreenView" customModule="Example" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR4-bG-kpZ">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="greenClick:" destination="PFc-aR-Kn7" eventType="touchUpInside" id="cEB-NN-3nF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-fp-BGU">
+                    <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                    <state key="normal" title="Button2"/>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="YR4-bG-kpZ" firstAttribute="leading" secondItem="PFc-aR-Kn7" secondAttribute="leading" id="3ht-Cm-Tgb"/>
-                <constraint firstAttribute="trailing" secondItem="YR4-bG-kpZ" secondAttribute="trailing" id="BTG-Di-vDq"/>
-                <constraint firstItem="YR4-bG-kpZ" firstAttribute="top" secondItem="PFc-aR-Kn7" secondAttribute="top" id="BpK-LR-shp"/>
-                <constraint firstAttribute="bottom" secondItem="YR4-bG-kpZ" secondAttribute="bottom" id="hgb-L9-u7y"/>
+                <constraint firstItem="9gK-fp-BGU" firstAttribute="top" secondItem="YR4-bG-kpZ" secondAttribute="bottom" id="A6e-jc-hN8"/>
+                <constraint firstItem="YR4-bG-kpZ" firstAttribute="leading" secondItem="PFc-aR-Kn7" secondAttribute="leading" id="DGJ-5K-9Km"/>
+                <constraint firstItem="9gK-fp-BGU" firstAttribute="height" secondItem="YR4-bG-kpZ" secondAttribute="height" id="Gk9-0n-tHV"/>
+                <constraint firstAttribute="trailing" secondItem="9gK-fp-BGU" secondAttribute="trailing" id="Rp3-64-HAl"/>
+                <constraint firstAttribute="bottom" secondItem="9gK-fp-BGU" secondAttribute="bottom" id="SdG-5b-R0w"/>
+                <constraint firstItem="9gK-fp-BGU" firstAttribute="leading" secondItem="PFc-aR-Kn7" secondAttribute="leading" id="XTJ-Cg-EPg"/>
+                <constraint firstItem="YR4-bG-kpZ" firstAttribute="top" secondItem="PFc-aR-Kn7" secondAttribute="top" id="v4C-5K-vYx"/>
+                <constraint firstAttribute="trailing" secondItem="YR4-bG-kpZ" secondAttribute="trailing" id="wpr-fL-aaM"/>
+                <constraint firstItem="9gK-fp-BGU" firstAttribute="top" secondItem="YR4-bG-kpZ" secondAttribute="bottom" id="yTf-EQ-Qp8"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
