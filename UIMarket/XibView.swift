@@ -15,7 +15,7 @@ class XibView : UIView {
     
     var contentView:UIView?
     @IBInspectable var nibName:String?
-    @IBInspectable var bundleIdentifier:String? //default is 'Main' bundle
+    @IBInspectable var bundleIdentifier:String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,7 +43,7 @@ class XibView : UIView {
         guard let nibName = nibName else {return nil}
 
         let bundle = bundleIdentifier == nil
-            ? Bundle.main
+            ? Bundle(for: type(of: self))
             : Bundle(identifier: bundleIdentifier!)
         let nib = UINib(nibName: nibName, bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GreenView: UIButton {
+class GreenView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
