@@ -17,6 +17,8 @@
 		F22F2ED01F615238006E8B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22F2ECF1F615238006E8B83 /* Assets.xcassets */; };
 		F22F2ED31F615238006E8B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22F2ED11F615238006E8B83 /* LaunchScreen.storyboard */; };
 		F29D00001F6299B3001FF72F /* UIView+Borderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFF31F627998001FF72F /* UIView+Borderable.swift */; };
+		F29D00031F62AB36001FF72F /* AuthCodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D00021F62AB36001FF72F /* AuthCodeInput.swift */; };
+		F29D00041F62AB36001FF72F /* AuthCodeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29D00021F62AB36001FF72F /* AuthCodeInput.swift */; };
 		F29DFFE91F6236FF001FF72F /* Borderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203989A1F61906300D0D808 /* Borderable.swift */; };
 		F29DFFEF1F627125001FF72F /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFEE1F627125001FF72F /* Colorable.swift */; };
 		F29DFFF01F6274CD001FF72F /* Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFEE1F627125001FF72F /* Colorable.swift */; };
@@ -25,6 +27,10 @@
 		F29DFFFD1F6287FF001FF72F /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFFC1F6287FF001FF72F /* BorderView.swift */; };
 		F29DFFFE1F628B0E001FF72F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFF61F627B92001FF72F /* BorderButton.swift */; };
 		F29DFFFF1F628B14001FF72F /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFFC1F6287FF001FF72F /* BorderView.swift */; };
+		F2E315AA1F6632D8004466CE /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E315A91F6632D8004466CE /* XibView.swift */; };
+		F2E315AC1F663826004466CE /* GreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E315AB1F663826004466CE /* GreenView.xib */; };
+		F2E315AE1F66386F004466CE /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E315AD1F66386F004466CE /* GreenView.swift */; };
+		F2E315AF1F663A53004466CE /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E315A91F6632D8004466CE /* XibView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +69,14 @@
 		F22F2ECF1F615238006E8B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F22F2ED21F615238006E8B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F22F2ED41F615238006E8B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29D00021F62AB36001FF72F /* AuthCodeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCodeInput.swift; sourceTree = "<group>"; };
 		F29DFFEE1F627125001FF72F /* Colorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorable.swift; sourceTree = "<group>"; };
 		F29DFFF31F627998001FF72F /* UIView+Borderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Borderable.swift"; sourceTree = "<group>"; };
 		F29DFFF61F627B92001FF72F /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		F29DFFFC1F6287FF001FF72F /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		F2E315A91F6632D8004466CE /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		F2E315AB1F663826004466CE /* GreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenView.xib; sourceTree = "<group>"; };
+		F2E315AD1F66386F004466CE /* GreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 				F20398991F61902A00D0D808 /* Protocol */,
 				F203989C1F61907800D0D808 /* Extension */,
 				F29DFFF51F627A3C001FF72F /* Views */,
+				F29D00011F62A577001FF72F /* SpecialViews */,
 				F22F2EBA1F6151E8006E8B83 /* UIMarket.h */,
 				F22F2EBB1F6151E8006E8B83 /* Info.plist */,
 			);
@@ -144,8 +155,18 @@
 				F22F2ECF1F615238006E8B83 /* Assets.xcassets */,
 				F22F2ED11F615238006E8B83 /* LaunchScreen.storyboard */,
 				F22F2ED41F615238006E8B83 /* Info.plist */,
+				F2E315AB1F663826004466CE /* GreenView.xib */,
+				F2E315AD1F66386F004466CE /* GreenView.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		F29D00011F62A577001FF72F /* SpecialViews */ = {
+			isa = PBXGroup;
+			children = (
+				F29D00021F62AB36001FF72F /* AuthCodeInput.swift */,
+			);
+			name = SpecialViews;
 			sourceTree = "<group>";
 		};
 		F29DFFF51F627A3C001FF72F /* Views */ = {
@@ -153,6 +174,7 @@
 			children = (
 				F29DFFFC1F6287FF001FF72F /* BorderView.swift */,
 				F29DFFF61F627B92001FF72F /* BorderButton.swift */,
+				F2E315A91F6632D8004466CE /* XibView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -264,6 +286,7 @@
 			files = (
 				F22F2ED31F615238006E8B83 /* LaunchScreen.storyboard in Resources */,
 				F22F2ED01F615238006E8B83 /* Assets.xcassets in Resources */,
+				F2E315AC1F663826004466CE /* GreenView.xib in Resources */,
 				F22F2ECE1F615238006E8B83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F203989B1F61906300D0D808 /* Borderable.swift in Sources */,
+				F2E315AA1F6632D8004466CE /* XibView.swift in Sources */,
 				F29DFFEF1F627125001FF72F /* Colorable.swift in Sources */,
 				F29DFFF41F627998001FF72F /* UIView+Borderable.swift in Sources */,
+				F29D00031F62AB36001FF72F /* AuthCodeInput.swift in Sources */,
 				F29DFFFD1F6287FF001FF72F /* BorderView.swift in Sources */,
 				F29DFFF71F627B92001FF72F /* BorderButton.swift in Sources */,
 			);
@@ -287,9 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E315AF1F663A53004466CE /* XibView.swift in Sources */,
 				F29D00001F6299B3001FF72F /* UIView+Borderable.swift in Sources */,
 				F29DFFFF1F628B14001FF72F /* BorderView.swift in Sources */,
 				F29DFFFE1F628B0E001FF72F /* BorderButton.swift in Sources */,
+				F2E315AE1F66386F004466CE /* GreenView.swift in Sources */,
+				F29D00041F62AB36001FF72F /* AuthCodeInput.swift in Sources */,
 				F29DFFF01F6274CD001FF72F /* Colorable.swift in Sources */,
 				F29DFFE91F6236FF001FF72F /* Borderable.swift in Sources */,
 				F22F2ECB1F615238006E8B83 /* ViewController.swift in Sources */,
