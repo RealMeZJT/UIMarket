@@ -27,6 +27,12 @@
 		F29DFFFD1F6287FF001FF72F /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFFC1F6287FF001FF72F /* BorderView.swift */; };
 		F29DFFFE1F628B0E001FF72F /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFF61F627B92001FF72F /* BorderButton.swift */; };
 		F29DFFFF1F628B14001FF72F /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DFFFC1F6287FF001FF72F /* BorderView.swift */; };
+		F2CA4C2E1F6A65F00079FC61 /* UIView+Shadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA4C2D1F6A65F00079FC61 /* UIView+Shadowable.swift */; };
+		F2CA4C301F6A66130079FC61 /* Shadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA4C2F1F6A66130079FC61 /* Shadowable.swift */; };
+		F2CA4C311F6A69E10079FC61 /* Shadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA4C2F1F6A66130079FC61 /* Shadowable.swift */; };
+		F2CA4C321F6A69E10079FC61 /* UIView+Shadowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA4C2D1F6A65F00079FC61 /* UIView+Shadowable.swift */; };
+		F2CA4C351F6A6AC90079FC61 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CA4C341F6A6AC90079FC61 /* QuartzCore.framework */; };
+		F2CA4C371F6A6E1F0079FC61 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CA4C341F6A6AC90079FC61 /* QuartzCore.framework */; };
 		F2E315AA1F6632D8004466CE /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E315A91F6632D8004466CE /* XibView.swift */; };
 		F2E315AC1F663826004466CE /* GreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E315AB1F663826004466CE /* GreenView.xib */; };
 		F2E315AE1F66386F004466CE /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E315AD1F66386F004466CE /* GreenView.swift */; };
@@ -74,6 +80,9 @@
 		F29DFFF31F627998001FF72F /* UIView+Borderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Borderable.swift"; sourceTree = "<group>"; };
 		F29DFFF61F627B92001FF72F /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		F29DFFFC1F6287FF001FF72F /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		F2CA4C2D1F6A65F00079FC61 /* UIView+Shadowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadowable.swift"; sourceTree = "<group>"; };
+		F2CA4C2F1F6A66130079FC61 /* Shadowable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shadowable.swift; sourceTree = "<group>"; };
+		F2CA4C341F6A6AC90079FC61 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F2E315A91F6632D8004466CE /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		F2E315AB1F663826004466CE /* GreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenView.xib; sourceTree = "<group>"; };
 		F2E315AD1F66386F004466CE /* GreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
@@ -84,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CA4C371F6A6E1F0079FC61 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CA4C351F6A6AC90079FC61 /* QuartzCore.framework in Frameworks */,
 				F20398A61F6191EB00D0D808 /* UIMarket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +114,7 @@
 			children = (
 				F29DFFEE1F627125001FF72F /* Colorable.swift */,
 				F203989A1F61906300D0D808 /* Borderable.swift */,
+				F2CA4C2F1F6A66130079FC61 /* Shadowable.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -111,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F29DFFF31F627998001FF72F /* UIView+Borderable.swift */,
+				F2CA4C2D1F6A65F00079FC61 /* UIView+Shadowable.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 				F22F2EB91F6151E8006E8B83 /* UIMarket */,
 				F22F2EC71F615238006E8B83 /* Example */,
 				F22F2EB81F6151E8006E8B83 /* Products */,
+				F2CA4C331F6A6AC80079FC61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +191,14 @@
 				F2E315A91F6632D8004466CE /* XibView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F2CA4C331F6A6AC80079FC61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2CA4C341F6A6AC90079FC61 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CA4C2E1F6A65F00079FC61 /* UIView+Shadowable.swift in Sources */,
 				F203989B1F61906300D0D808 /* Borderable.swift in Sources */,
 				F2E315AA1F6632D8004466CE /* XibView.swift in Sources */,
+				F2CA4C301F6A66130079FC61 /* Shadowable.swift in Sources */,
 				F29DFFEF1F627125001FF72F /* Colorable.swift in Sources */,
 				F29DFFF41F627998001FF72F /* UIView+Borderable.swift in Sources */,
 				F29D00031F62AB36001FF72F /* AuthCodeInput.swift in Sources */,
@@ -312,6 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CA4C311F6A69E10079FC61 /* Shadowable.swift in Sources */,
+				F2CA4C321F6A69E10079FC61 /* UIView+Shadowable.swift in Sources */,
 				F2E315AF1F663A53004466CE /* XibView.swift in Sources */,
 				F29D00001F6299B3001FF72F /* UIView+Borderable.swift in Sources */,
 				F29DFFFF1F628B14001FF72F /* BorderView.swift in Sources */,

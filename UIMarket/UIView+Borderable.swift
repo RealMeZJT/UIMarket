@@ -17,8 +17,8 @@ extension UIView : Borderable {
         }
         
         set {
-            print("cornerRadius set")
             layer.cornerRadius = newValue
+            layer.masksToBounds = cornerRadius > 0
         }
     }
     
@@ -41,7 +41,7 @@ extension UIView : Borderable {
         }
         
         set {
-            layer.borderColor = borderColor?.cgColor
+            layer.borderColor = newValue?.cgColor
         }
     }
 }

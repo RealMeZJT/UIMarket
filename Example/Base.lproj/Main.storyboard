@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -61,14 +61,39 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="GreenView"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REN-FQ-UYJ" customClass="BorderView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="67" y="149" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.73114770650000005" green="0.85620939730000001" blue="0.99937659499999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.90215386279999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="16" height="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.48627450980392156" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="REN-FQ-UYJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2wJ-A3-0ga"/>
                             <constraint firstItem="LC7-mK-Sql" firstAttribute="top" secondItem="c9c-bD-mOf" secondAttribute="bottom" constant="22" id="6P0-uh-RMe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LC7-mK-Sql" secondAttribute="bottom" constant="18" id="KNF-D8-jKH"/>
                             <constraint firstItem="c9c-bD-mOf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="61" id="Llo-Cu-7Jc"/>
                             <constraint firstItem="LC7-mK-Sql" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="209" id="NRH-sm-oS4"/>
+                            <constraint firstItem="REN-FQ-UYJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="129" id="QRh-gw-1FX"/>
                             <constraint firstItem="LC7-mK-Sql" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Rfr-kV-4oM"/>
+                            <constraint firstItem="c9c-bD-mOf" firstAttribute="top" secondItem="REN-FQ-UYJ" secondAttribute="bottom" constant="67" id="eCf-U9-TgC"/>
+                            <constraint firstItem="REN-FQ-UYJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="lA6-be-1gI"/>
                             <constraint firstItem="c9c-bD-mOf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="324" id="uHK-ku-mgw"/>
                         </constraints>
                     </view>

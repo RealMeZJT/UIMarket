@@ -6,6 +6,7 @@
 //  Copyright © 2017 ZJT. All rights reserved.
 //
 import UIKit
+import QuartzCore
 
 @IBDesignable
 class BorderView: UIView {
